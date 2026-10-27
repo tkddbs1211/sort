@@ -41,7 +41,7 @@ void selection_sort(DataItem arr[], int n, long long *comparisons, long long *mo
         }
         if (min_idx != i) {
             temp = arr[i];        
-            arr[i] = arr[min_idx];   
+            arr[i] = arr[min_idx];    
             arr[min_idx] = temp;    
             (*movements) += 3;
         }
@@ -317,7 +317,6 @@ int main() {
     printf("Insertion Sort (>)   : %s\n", stab_ins_gt);
     printf("Insertion Sort (>=)  : %s\n", stab_ins_gte);
 
-    // 메모리 해제
     free(base_data);
     free(work_data);
     free(sample_base);
